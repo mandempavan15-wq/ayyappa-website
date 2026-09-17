@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-montserrat);
+  
+  --color-deep-navy: #071329;
+  --color-brand-red: #E30613;
+  --color-royal-blue: #143FC4;
+}
+
+@layer base {
+  html {
+    scroll-behavior: initial; /* Let Lenis handle scrolling */
+  }
+  
+  body {
+    background-color: white;
+    color: var(--color-deep-navy);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Optional utilities for hiding scrollbar if desired */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
